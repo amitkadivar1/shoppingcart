@@ -28,7 +28,7 @@ mongoose.connect("mongodb://127.0.0.1:27017/shopping", {
 });
 
 require("./config/passport");
-// view engine setup
+// view engine setup code
 app.engine(".hbs", expressHbs({ defaultLayout: "layout", extname: ".hbs" }));
 app.set("view engine", ".hbs");
 
@@ -67,7 +67,7 @@ app.use((req,res,next)=>{
   })
 })
 
-// catch 404 and forward to error handler
+// catch 404 and forward to error handler code
 app.use(function(req, res, next) {
   next(createError(404));
 });
